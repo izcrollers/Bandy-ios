@@ -1,0 +1,5 @@
+type query {
+    users(email:"aaron.roche@bandy.com") {
+        id
+    }
+}
