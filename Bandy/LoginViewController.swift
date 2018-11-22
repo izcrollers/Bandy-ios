@@ -7,6 +7,7 @@
 //
 
 import Alamofire
+import Apollo
 import UIKit
 
 class LoginViewController: UIViewController {
@@ -14,9 +15,6 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var textFieldLogin: UITextField!
     @IBOutlet weak var textFieldPassword: UITextField!
     @IBOutlet weak var labelMessage: UILabel!
-    
-    var TypeUser = ""
-    let userType = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -30,13 +28,32 @@ class LoginViewController: UIViewController {
     
     @IBAction func buttonLogin(_ loginButton: UIButton) {
 
-        if (TypeUser == "musician") {
-            self.performSegue(withIdentifier: "Musicien tab Bar Controller", sender: self)
-        }
-        else if (TypeUser == "label") {
-            self.performSegue(withIdentifier: "Label Tab Bar Controller", sender: self)
+        //creating parameters for the post request
+        let parameters: Parameters=[
+            "login":textFieldLogin.text!,
+            "password":textFieldPassword.text!,
+            ]
+        
+        //Sending http post request
+        Alamofire.request("https://bandy.tech/graphql/login", method: .post, parameters: parameters).responseString
+            // responseString ou responseJSON ?
+        {
+                response in
+                //printing response
+                print(response)
+                
+                //getting the json value from the server
+                if let result = response.result.value {
+                    
+                    //converting it as NSDictionary
+                    let jsonData = result as! NSDictionary
+                    
+                    //displaying the message in label
+                    self.labelMessage.text = jsonData.value(forKey: "message") as! String?
+                }
         }
     }
+    
     //Button action
     @IBAction func buttonRegister(_ sender: UIButton) {
         
@@ -47,7 +64,7 @@ class LoginViewController: UIViewController {
         ]
         
         //Sending http post request
-        Alamofire.request("https://emdel.fr/graphql/login", method: .post, parameters: parameters).responseJSON
+        Alamofire.request("https://bandy.tech/graphql/login", method: .post, parameters: parameters).responseJSON
             {
                 response in
                 //printing response

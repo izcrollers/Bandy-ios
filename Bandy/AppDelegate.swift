@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import Apollo
+import Alamofire
 
 // Change localhost to your machine's local IP address when running from a device
 let graphlQLEndpointURL = "https://bandy.tech/graphql"

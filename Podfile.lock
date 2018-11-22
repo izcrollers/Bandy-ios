@@ -1,11 +1,11 @@
 PODS:
   - Alamofire (4.7.3)
-  - Apollo (0.9.3):
-    - Apollo/Core (= 0.9.3)
-  - Apollo/Core (0.9.3)
+  - Apollo (0.9.4):
+    - Apollo/Core (= 0.9.4)
+  - Apollo/Core (0.9.4)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.7)
+  - Alamofire (~> 4.7.3)
   - Apollo
 
 SPEC REPOS:
@@ -15,8 +15,8 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
-  Apollo: 38270f8bdc031ac07d4de3ec068a2289d7d287e0
+  Apollo: 450856adbdebcdf28c3c671f81732ac3f9944065
 
-PODFILE CHECKSUM: c9f0d18cf7b8443b3d9773072c064a71790e3f9c
+PODFILE CHECKSUM: bc31c6f483e8cda8138cfc888464d3080829386d
 
 COCOAPODS: 1.5.3

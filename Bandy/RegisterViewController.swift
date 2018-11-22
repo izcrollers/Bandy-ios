@@ -7,6 +7,7 @@
 //
 
 import Alamofire
+import Apollo
 import UIKit
 
 class RegisterViewController: UIViewController {
@@ -28,7 +29,7 @@ class RegisterViewController: UIViewController {
             ]
         
         //Sending http post request
-        Alamofire.request("https://emdel.fr/graphql", method: .post, parameters: parameters).responseJSON
+        Alamofire.request("https://bandy.tech/graphql", method: .post, parameters: parameters).responseJSON
             {
                 response in
                 //printing response

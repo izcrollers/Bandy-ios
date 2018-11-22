@@ -9,28 +9,20 @@
 /* Begin PBXBuildFile section */
 		3D2FE26054A45EB638E7C41E /* Pods_Bandy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521F69E7304AA7512901F908 /* Pods_Bandy.framework */; };
 		F906ADD320BE7BA2000D8E78 /* LoginTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F906ADD220BE7BA2000D8E78 /* LoginTestViewController.swift */; };
-		F910BFE01F9DDA5D00CB8E69 /* CustomCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = F910BFDF1F9DDA5D00CB8E69 /* CustomCalendar.swift */; };
-		F910BFE21F9DDC9400CB8E69 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F910BFE11F9DDC9400CB8E69 /* CalendarViewController.swift */; };
 		F929B74C208F8763001B58D6 /* LabelProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F929B74B208F8763001B58D6 /* LabelProfilViewController.swift */; };
 		F929B74E208F8782001B58D6 /* EditLabelProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F929B74D208F8782001B58D6 /* EditLabelProfilViewController.swift */; };
-		F9879120204926C5001FCFEC /* SalleProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F987911F204926C5001FCFEC /* SalleProfilViewController.swift */; };
 		F9C43C3520BEA6A900CD44AC /* Apollo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9C43C3420BEA6A900CD44AC /* Apollo.framework */; };
 		F9C43C3720BEB16800CD44AC /* bandy.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F9C43C3620BEB16800CD44AC /* bandy.graphql */; };
 		F9C961601EC62BA80094EDFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C9615F1EC62BA80094EDFE /* AppDelegate.swift */; };
 		F9C961621EC62BA80094EDFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C961611EC62BA80094EDFE /* ViewController.swift */; };
 		F9C961651EC62BA80094EDFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9C961631EC62BA80094EDFE /* Main.storyboard */; };
-		F9C961681EC62BA80094EDFE /* Bandy.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F9C961661EC62BA80094EDFE /* Bandy.xcdatamodeld */; };
 		F9C9616A1EC62BA80094EDFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9C961691EC62BA80094EDFE /* Assets.xcassets */; };
 		F9C9616D1EC62BA80094EDFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9C9616B1EC62BA80094EDFE /* LaunchScreen.storyboard */; };
-		F9C961781EC62BA80094EDFE /* BandyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C961771EC62BA80094EDFE /* BandyTests.swift */; };
 		F9C961831EC62BA80094EDFE /* BandyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C961821EC62BA80094EDFE /* BandyUITests.swift */; };
-		F9DF15741FE974380056B8BD /* NewEventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DF15731FE974380056B8BD /* NewEventViewController.swift */; };
-		F9DF15761FE97CD70056B8BD /* EventTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9DF15751FE97CD70056B8BD /* EventTableViewCell.swift */; };
 		F9E61BFB1FCC275200715124 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E61BFA1FCC275200715124 /* LoginViewController.swift */; };
 		F9E61BFF1FCC39F200715124 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E61BFE1FCC39F200715124 /* RegisterViewController.swift */; };
 		F9E61C021FCC3D8D00715124 /* ProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E61C011FCC3D8D00715124 /* ProfilViewController.swift */; };
 		F9E61C041FCC3FBB00715124 /* ProfilEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E61C031FCC3FBB00715124 /* ProfilEditViewController.swift */; };
-		F9FF02982049863A0084FA1C /* EditSalleProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9FF02972049863A0084FA1C /* EditSalleProfilViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,18 +60,14 @@
 		521F69E7304AA7512901F908 /* Pods_Bandy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bandy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E942F9FED8A0CD253E75FF4 /* Pods-Bandy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bandy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bandy/Pods-Bandy.release.xcconfig"; sourceTree = "<group>"; };
 		F906ADD220BE7BA2000D8E78 /* LoginTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTestViewController.swift; sourceTree = "<group>"; };
-		F910BFDF1F9DDA5D00CB8E69 /* CustomCalendar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCalendar.swift; sourceTree = "<group>"; };
-		F910BFE11F9DDC9400CB8E69 /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalendarViewController.swift; path = Bandy/CalendarViewController.swift; sourceTree = SOURCE_ROOT; };
 		F929B74B208F8763001B58D6 /* LabelProfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelProfilViewController.swift; sourceTree = "<group>"; };
 		F929B74D208F8782001B58D6 /* EditLabelProfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLabelProfilViewController.swift; sourceTree = "<group>"; };
-		F987911F204926C5001FCFEC /* SalleProfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalleProfilViewController.swift; sourceTree = "<group>"; };
 		F9C43C3420BEA6A900CD44AC /* Apollo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Apollo.framework; path = Apollo/Apollo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9C43C3620BEB16800CD44AC /* bandy.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bandy.graphql; sourceTree = "<group>"; };
 		F9C9615C1EC62BA80094EDFE /* Bandy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bandy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9C9615F1EC62BA80094EDFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9C961611EC62BA80094EDFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F9C961641EC62BA80094EDFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F9C961671EC62BA80094EDFE /* Bandy.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Bandy.xcdatamodel; sourceTree = "<group>"; };
 		F9C961691EC62BA80094EDFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F9C9616C1EC62BA80094EDFE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F9C9616E1EC62BA80094EDFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -89,13 +77,10 @@
 		F9C9617E1EC62BA80094EDFE /* BandyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BandyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9C961821EC62BA80094EDFE /* BandyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandyUITests.swift; sourceTree = "<group>"; };
 		F9C961841EC62BA80094EDFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F9DF15731FE974380056B8BD /* NewEventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewEventViewController.swift; sourceTree = "<group>"; };
-		F9DF15751FE97CD70056B8BD /* EventTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventTableViewCell.swift; sourceTree = "<group>"; };
 		F9E61BFA1FCC275200715124 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F9E61BFE1FCC39F200715124 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		F9E61C011FCC3D8D00715124 /* ProfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilViewController.swift; sourceTree = "<group>"; };
 		F9E61C031FCC3FBB00715124 /* ProfilEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilEditViewController.swift; sourceTree = "<group>"; };
-		F9FF02972049863A0084FA1C /* EditSalleProfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditSalleProfilViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,26 +131,10 @@
 		F961E6C8208F70C00063B391 /* Label */ = {
 			isa = PBXGroup;
 			children = (
-				F961E6CB208F70D80063B391 /* Profil */,
-				F961E6C9208F70CC0063B391 /* Calendrier */,
-			);
-			name = Label;
-			sourceTree = "<group>";
-		};
-		F961E6C9208F70CC0063B391 /* Calendrier */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Calendrier;
-			sourceTree = "<group>";
-		};
-		F961E6CB208F70D80063B391 /* Profil */ = {
-			isa = PBXGroup;
-			children = (
 				F929B74B208F8763001B58D6 /* LabelProfilViewController.swift */,
 				F929B74D208F8782001B58D6 /* EditLabelProfilViewController.swift */,
 			);
-			name = Profil;
+			name = Label;
 			sourceTree = "<group>";
 		};
 		F9677F3A1FCC143A0022825E /* Login */ = {
@@ -178,30 +147,13 @@
 			name = Login;
 			sourceTree = "<group>";
 		};
-		F987911A20491D5B001FCFEC /* Salle */ = {
-			isa = PBXGroup;
-			children = (
-				F987911E204925FB001FCFEC /* Profil */,
-			);
-			name = Salle;
-			sourceTree = "<group>";
-		};
 		F987911B20491D62001FCFEC /* Musicien */ = {
 			isa = PBXGroup;
 			children = (
-				F9D51C771F9DD2BE004732A8 /* Calendrier */,
-				F9E61C001FCC3D7100715124 /* Profil */,
+				F9E61C011FCC3D8D00715124 /* ProfilViewController.swift */,
+				F9E61C031FCC3FBB00715124 /* ProfilEditViewController.swift */,
 			);
 			name = Musicien;
-			sourceTree = "<group>";
-		};
-		F987911E204925FB001FCFEC /* Profil */ = {
-			isa = PBXGroup;
-			children = (
-				F987911F204926C5001FCFEC /* SalleProfilViewController.swift */,
-				F9FF02972049863A0084FA1C /* EditSalleProfilViewController.swift */,
-			);
-			name = Profil;
 			sourceTree = "<group>";
 		};
 		F9C961531EC62BA80094EDFE = {
@@ -232,7 +184,6 @@
 			children = (
 				F961E6C8208F70C00063B391 /* Label */,
 				F987911B20491D62001FCFEC /* Musicien */,
-				F987911A20491D5B001FCFEC /* Salle */,
 				F9677F3A1FCC143A0022825E /* Login */,
 				F9C9615F1EC62BA80094EDFE /* AppDelegate.swift */,
 				F9C961611EC62BA80094EDFE /* ViewController.swift */,
@@ -240,7 +191,6 @@
 				F9C961691EC62BA80094EDFE /* Assets.xcassets */,
 				F9C9616B1EC62BA80094EDFE /* LaunchScreen.storyboard */,
 				F9C9616E1EC62BA80094EDFE /* Info.plist */,
-				F9C961661EC62BA80094EDFE /* Bandy.xcdatamodeld */,
 			);
 			path = Bandy;
 			sourceTree = "<group>";
@@ -261,26 +211,6 @@
 				F9C961841EC62BA80094EDFE /* Info.plist */,
 			);
 			path = BandyUITests;
-			sourceTree = "<group>";
-		};
-		F9D51C771F9DD2BE004732A8 /* Calendrier */ = {
-			isa = PBXGroup;
-			children = (
-				F910BFDF1F9DDA5D00CB8E69 /* CustomCalendar.swift */,
-				F910BFE11F9DDC9400CB8E69 /* CalendarViewController.swift */,
-				F9DF15731FE974380056B8BD /* NewEventViewController.swift */,
-				F9DF15751FE97CD70056B8BD /* EventTableViewCell.swift */,
-			);
-			name = Calendrier;
-			sourceTree = "<group>";
-		};
-		F9E61C001FCC3D7100715124 /* Profil */ = {
-			isa = PBXGroup;
-			children = (
-				F9E61C011FCC3D8D00715124 /* ProfilViewController.swift */,
-				F9E61C031FCC3FBB00715124 /* ProfilEditViewController.swift */,
-			);
-			name = Profil;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -485,19 +415,12 @@
 			files = (
 				F906ADD320BE7BA2000D8E78 /* LoginTestViewController.swift in Sources */,
 				F9E61C021FCC3D8D00715124 /* ProfilViewController.swift in Sources */,
-				F9DF15761FE97CD70056B8BD /* EventTableViewCell.swift in Sources */,
 				F9E61C041FCC3FBB00715124 /* ProfilEditViewController.swift in Sources */,
 				F929B74E208F8782001B58D6 /* EditLabelProfilViewController.swift in Sources */,
-				F9DF15741FE974380056B8BD /* NewEventViewController.swift in Sources */,
 				F9E61BFB1FCC275200715124 /* LoginViewController.swift in Sources */,
-				F910BFE21F9DDC9400CB8E69 /* CalendarViewController.swift in Sources */,
-				F9FF02982049863A0084FA1C /* EditSalleProfilViewController.swift in Sources */,
-				F9879120204926C5001FCFEC /* SalleProfilViewController.swift in Sources */,
 				F9E61BFF1FCC39F200715124 /* RegisterViewController.swift in Sources */,
-				F910BFE01F9DDA5D00CB8E69 /* CustomCalendar.swift in Sources */,
 				F9C961621EC62BA80094EDFE /* ViewController.swift in Sources */,
 				F929B74C208F8763001B58D6 /* LabelProfilViewController.swift in Sources */,
-				F9C961681EC62BA80094EDFE /* Bandy.xcdatamodeld in Sources */,
 				F9C961601EC62BA80094EDFE /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -506,7 +429,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9C961781EC62BA80094EDFE /* BandyTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -669,6 +591,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KA53CDTBA5;
 				INFOPLIST_FILE = Bandy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Julien-Kessali.Bandy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -683,6 +606,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = KA53CDTBA5;
 				INFOPLIST_FILE = Bandy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "Julien-Kessali.Bandy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -788,19 +712,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		F9C961661EC62BA80094EDFE /* Bandy.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				F9C961671EC62BA80094EDFE /* Bandy.xcdatamodel */,
-			);
-			currentVersion = F9C961671EC62BA80094EDFE /* Bandy.xcdatamodel */;
-			path = Bandy.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = F9C961541EC62BA80094EDFE /* Project object */;
 }
