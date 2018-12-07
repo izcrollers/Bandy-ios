@@ -30,13 +30,12 @@ class LoginViewController: UIViewController {
 
         //creating parameters for the post request
         let parameters: Parameters=[
-            "login":textFieldLogin.text!,
+            "email":textFieldLogin.text!,
             "password":textFieldPassword.text!,
             ]
         
         //Sending http post request
-        Alamofire.request("https://bandy.tech/graphql/login", method: .post, parameters: parameters).responseString
-            // responseString ou responseJSON ?
+        Alamofire.request("https://bandy.tech/graphql/login", method: .post, parameters: parameters, encoding:JSONEncoding.default).responseString
         {
                 response in
                 //printing response
@@ -46,40 +45,11 @@ class LoginViewController: UIViewController {
                 if let result = response.result.value {
                     
                     //converting it as NSDictionary
-                    let jsonData = result as! NSDictionary
+                    //let jsonData = result as! NSMutableDictionary
                     
                     //displaying the message in label
-                    self.labelMessage.text = jsonData.value(forKey: "message") as! String?
-                }
-        }
-    }
-    
-    //Button action
-    @IBAction func buttonRegister(_ sender: UIButton) {
-        
-        //creating parameters for the post request
-        let parameters: Parameters=[
-            "login":textFieldLogin.text!,
-            "password":textFieldPassword.text!,
-        ]
-        
-        //Sending http post request
-        Alamofire.request("https://bandy.tech/graphql/login", method: .post, parameters: parameters).responseJSON
-            {
-                response in
-                //printing response
-                print(response)
-                
-                //getting the json value from the server
-                if let result = response.result.value {
-                    
-                    //converting it as NSDictionary
-                    let jsonData = result as! NSDictionary
-                    
-                    //displaying the message in label
-                    self.labelMessage.text = jsonData.value(forKey: "message") as! String?
+                    self.labelMessage.text = result
                 }
         }
     }
 }
-

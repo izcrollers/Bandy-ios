@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3D2FE26054A45EB638E7C41E /* Pods_Bandy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521F69E7304AA7512901F908 /* Pods_Bandy.framework */; };
-		F906ADD320BE7BA2000D8E78 /* LoginTestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F906ADD220BE7BA2000D8E78 /* LoginTestViewController.swift */; };
 		F929B74C208F8763001B58D6 /* LabelProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F929B74B208F8763001B58D6 /* LabelProfilViewController.swift */; };
 		F929B74E208F8782001B58D6 /* EditLabelProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F929B74D208F8782001B58D6 /* EditLabelProfilViewController.swift */; };
 		F9C43C3520BEA6A900CD44AC /* Apollo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9C43C3420BEA6A900CD44AC /* Apollo.framework */; };
@@ -59,7 +58,6 @@
 		4EDE8D75A8F7265E9CF14B00 /* Pods-Bandy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bandy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bandy/Pods-Bandy.debug.xcconfig"; sourceTree = "<group>"; };
 		521F69E7304AA7512901F908 /* Pods_Bandy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bandy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E942F9FED8A0CD253E75FF4 /* Pods-Bandy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bandy.release.xcconfig"; path = "Pods/Target Support Files/Pods-Bandy/Pods-Bandy.release.xcconfig"; sourceTree = "<group>"; };
-		F906ADD220BE7BA2000D8E78 /* LoginTestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginTestViewController.swift; sourceTree = "<group>"; };
 		F929B74B208F8763001B58D6 /* LabelProfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelProfilViewController.swift; sourceTree = "<group>"; };
 		F929B74D208F8782001B58D6 /* EditLabelProfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLabelProfilViewController.swift; sourceTree = "<group>"; };
 		F9C43C3420BEA6A900CD44AC /* Apollo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Apollo.framework; path = Apollo/Apollo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -142,7 +140,6 @@
 			children = (
 				F9E61BFA1FCC275200715124 /* LoginViewController.swift */,
 				F9E61BFE1FCC39F200715124 /* RegisterViewController.swift */,
-				F906ADD220BE7BA2000D8E78 /* LoginTestViewController.swift */,
 			);
 			name = Login;
 			sourceTree = "<group>";
@@ -413,7 +410,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F906ADD320BE7BA2000D8E78 /* LoginTestViewController.swift in Sources */,
 				F9E61C021FCC3D8D00715124 /* ProfilViewController.swift in Sources */,
 				F9E61C041FCC3FBB00715124 /* ProfilEditViewController.swift in Sources */,
 				F929B74E208F8782001B58D6 /* EditLabelProfilViewController.swift in Sources */,
