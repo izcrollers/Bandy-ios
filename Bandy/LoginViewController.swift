@@ -10,6 +10,11 @@ import Alamofire
 import Apollo
 import UIKit
 
+var tokenarray = [""]
+var token = tokenarray[5]
+var user_id = tokenarray[9]
+//var user_id =
+
 class LoginViewController: UIViewController {
     
     @IBOutlet weak var textFieldLogin: UITextField!
@@ -39,17 +44,14 @@ class LoginViewController: UIViewController {
         {
                 response in
                 //printing response
+            
                 print(response)
-                
                 //getting the json value from the server
                 if let result = response.result.value {
-                    
-                    //converting it as NSDictionary
-                    //let jsonData = result as! NSMutableDictionary
-                    
                     //displaying the message in label
-                    self.labelMessage.text = result
-                }
+                    tokenarray = result.components(separatedBy: "\"")
+                    self.labelMessage.text = "connexion"
+            }
         }
     }
 }

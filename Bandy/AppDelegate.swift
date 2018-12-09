@@ -11,9 +11,16 @@ import CoreData
 import Apollo
 import Alamofire
 
-// Change localhost to your machine's local IP address when running from a device
 let graphlQLEndpointURL = "https://bandy.tech/graphql"
-let apollo = ApolloClient(url: URL(string: graphlQLEndpointURL)!)
+let apollo: ApolloClient = {
+    let configuration = URLSessionConfiguration.default
+    // Add additional headers as needed
+    configuration.httpAdditionalHeaders = ["Authorization": token] // Replace `<token>`
+    
+    let url = URL(string: graphlQLEndpointURL)!
+    
+    return ApolloClient(networkTransport: HTTPNetworkTransport(url: url, configuration: configuration))
+}()
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
