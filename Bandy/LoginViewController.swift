@@ -9,11 +9,11 @@
 import Alamofire
 import Apollo
 import UIKit
+import CoreData
 
 var tokenarray = [""]
 var token = tokenarray[5]
 var user_id = tokenarray[9]
-//var user_id =
 
 class LoginViewController: UIViewController {
     
@@ -23,7 +23,9 @@ class LoginViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view, typically from a nib.
+
     }
     
     override func didReceiveMemoryWarning() {
@@ -33,6 +35,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func buttonLogin(_ loginButton: UIButton) {
 
+        self.labelMessage.text = ""
         //creating parameters for the post request
         let parameters: Parameters=[
             "email":textFieldLogin.text!,
@@ -50,8 +53,24 @@ class LoginViewController: UIViewController {
                 if let result = response.result.value {
                     //displaying the message in label
                     tokenarray = result.components(separatedBy: "\"")
-                    self.labelMessage.text = "connexion"
+                    print(token)
+                    if (token == "message") {
+                        self.labelMessage.text = "Mauvais identifiant"
+                    }
+                    else {
+                        self.labelMessage.text = "connexion..."
+                        let redirect = UIStoryboard(name: "main", bundle: nil).instantiateViewController(withIdentifier: "Redirect") as! RedirectViewController
+                        present(redirect, animated: true, completion: nil)
+                    }
             }
         }
+//        apollo.fetch(query: RedirectUser(user_id: user_id)) { (result, error) in
+////            if (result = "musician") {
+////                show(vc: MusicienProfil, sender: ANY)
+////            }
+////            else {
+////                show(vc: LabelProfil, sender: ANY)
+////            }
+//        }
     }
 }

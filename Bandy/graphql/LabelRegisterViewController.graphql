@@ -1,0 +1,8 @@
+Mutation NewLabel($email: String!, $password: String!, $name: String!, $subscribing_type: String!, $favorite_genre: String!, $contactable: Boolean!) {
+    newLabel(email: $email, password: $password, name: $name, subscribing_type: $subscribing_type, favorite_genre: $favorite_genre, contactable: $contactable) {
+        id
+        email
+        name
+    }
+}
+

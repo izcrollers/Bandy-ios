@@ -7,13 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E659E2F21C02BA600F7BCB2 /* ProfilViewController.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 0E659E2E21C02BA600F7BCB2 /* ProfilViewController.graphql */; };
+		0E659E3121C02BCC00F7BCB2 /* LabelRegisterViewController.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 0E659E3021C02BCC00F7BCB2 /* LabelRegisterViewController.graphql */; };
+		0E659E3321C02C8500F7BCB2 /* LabelProfilViewController.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 0E659E3221C02C8500F7BCB2 /* LabelProfilViewController.graphql */; };
+		0E659E3521C02CA000F7BCB2 /* EditLabelProfilViewController.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 0E659E3421C02CA000F7BCB2 /* EditLabelProfilViewController.graphql */; };
+		0E659E3721C030E500F7BCB2 /* ResearchLabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E659E3621C030E500F7BCB2 /* ResearchLabelViewController.swift */; };
+		0E659E3921C030F900F7BCB2 /* ResearchLabelViewController.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 0E659E3821C030F900F7BCB2 /* ResearchLabelViewController.graphql */; };
+		0E659E3D21C05D2600F7BCB2 /* LoginViewController.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 0E659E3C21C05D2600F7BCB2 /* LoginViewController.graphql */; };
+		0EBEEC3521BDCA2E00A14BC2 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EBEEC3421BDCA2D00A14BC2 /* API.swift */; };
+		0EBEFC2E21BDB3B80099E419 /* MusicianRegisterViewController.graphql in Resources */ = {isa = PBXBuildFile; fileRef = 0EBEFC2D21BDB3B80099E419 /* MusicianRegisterViewController.graphql */; };
+		0EC7F45E21BDB93D00DAF216 /* schema.json in Resources */ = {isa = PBXBuildFile; fileRef = 0EC7F45D21BDB93C00DAF216 /* schema.json */; };
+		0EDC904621C1791F00700C46 /* RedirectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDC904521C1791F00700C46 /* RedirectViewController.swift */; };
 		0EDCCA5A21BD7A5F00C9BC02 /* MusicianRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDCCA5921BD7A5F00C9BC02 /* MusicianRegisterViewController.swift */; };
 		0EDCCA5C21BD7A8500C9BC02 /* LabelRegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EDCCA5B21BD7A8500C9BC02 /* LabelRegisterViewController.swift */; };
 		3D2FE26054A45EB638E7C41E /* Pods_Bandy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521F69E7304AA7512901F908 /* Pods_Bandy.framework */; };
 		F929B74C208F8763001B58D6 /* LabelProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F929B74B208F8763001B58D6 /* LabelProfilViewController.swift */; };
 		F929B74E208F8782001B58D6 /* EditLabelProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F929B74D208F8782001B58D6 /* EditLabelProfilViewController.swift */; };
 		F9C43C3520BEA6A900CD44AC /* Apollo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F9C43C3420BEA6A900CD44AC /* Apollo.framework */; };
-		F9C43C3720BEB16800CD44AC /* bandy.graphql in Resources */ = {isa = PBXBuildFile; fileRef = F9C43C3620BEB16800CD44AC /* bandy.graphql */; };
 		F9C961601EC62BA80094EDFE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C9615F1EC62BA80094EDFE /* AppDelegate.swift */; };
 		F9C961621EC62BA80094EDFE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C961611EC62BA80094EDFE /* ViewController.swift */; };
 		F9C961651EC62BA80094EDFE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9C961631EC62BA80094EDFE /* Main.storyboard */; };
@@ -21,7 +31,6 @@
 		F9C9616D1EC62BA80094EDFE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9C9616B1EC62BA80094EDFE /* LaunchScreen.storyboard */; };
 		F9C961831EC62BA80094EDFE /* BandyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9C961821EC62BA80094EDFE /* BandyUITests.swift */; };
 		F9E61BFB1FCC275200715124 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E61BFA1FCC275200715124 /* LoginViewController.swift */; };
-		F9E61BFF1FCC39F200715124 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E61BFE1FCC39F200715124 /* RegisterViewController.swift */; };
 		F9E61C021FCC3D8D00715124 /* ProfilViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E61C011FCC3D8D00715124 /* ProfilViewController.swift */; };
 		F9E61C041FCC3FBB00715124 /* ProfilEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E61C031FCC3FBB00715124 /* ProfilEditViewController.swift */; };
 /* End PBXBuildFile section */
@@ -57,6 +66,17 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		0E659E2E21C02BA600F7BCB2 /* ProfilViewController.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = ProfilViewController.graphql; sourceTree = "<group>"; };
+		0E659E3021C02BCC00F7BCB2 /* LabelRegisterViewController.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = LabelRegisterViewController.graphql; sourceTree = "<group>"; };
+		0E659E3221C02C8500F7BCB2 /* LabelProfilViewController.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = LabelProfilViewController.graphql; sourceTree = "<group>"; };
+		0E659E3421C02CA000F7BCB2 /* EditLabelProfilViewController.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = EditLabelProfilViewController.graphql; sourceTree = "<group>"; };
+		0E659E3621C030E500F7BCB2 /* ResearchLabelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResearchLabelViewController.swift; sourceTree = "<group>"; };
+		0E659E3821C030F900F7BCB2 /* ResearchLabelViewController.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = ResearchLabelViewController.graphql; sourceTree = "<group>"; };
+		0E659E3C21C05D2600F7BCB2 /* LoginViewController.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = LoginViewController.graphql; sourceTree = "<group>"; };
+		0EBEEC3421BDCA2D00A14BC2 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		0EBEFC2D21BDB3B80099E419 /* MusicianRegisterViewController.graphql */ = {isa = PBXFileReference; lastKnownFileType = text; path = MusicianRegisterViewController.graphql; sourceTree = "<group>"; };
+		0EC7F45D21BDB93C00DAF216 /* schema.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = schema.json; sourceTree = "<group>"; };
+		0EDC904521C1791F00700C46 /* RedirectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RedirectViewController.swift; path = ../RedirectViewController.swift; sourceTree = "<group>"; };
 		0EDCCA5921BD7A5F00C9BC02 /* MusicianRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicianRegisterViewController.swift; sourceTree = "<group>"; };
 		0EDCCA5B21BD7A8500C9BC02 /* LabelRegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelRegisterViewController.swift; sourceTree = "<group>"; };
 		4EDE8D75A8F7265E9CF14B00 /* Pods-Bandy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bandy.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Bandy/Pods-Bandy.debug.xcconfig"; sourceTree = "<group>"; };
@@ -65,7 +85,6 @@
 		F929B74B208F8763001B58D6 /* LabelProfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelProfilViewController.swift; sourceTree = "<group>"; };
 		F929B74D208F8782001B58D6 /* EditLabelProfilViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLabelProfilViewController.swift; sourceTree = "<group>"; };
 		F9C43C3420BEA6A900CD44AC /* Apollo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = Apollo.framework; path = Apollo/Apollo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F9C43C3620BEB16800CD44AC /* bandy.graphql */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bandy.graphql; sourceTree = "<group>"; };
 		F9C9615C1EC62BA80094EDFE /* Bandy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bandy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9C9615F1EC62BA80094EDFE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9C961611EC62BA80094EDFE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -80,7 +99,6 @@
 		F9C961821EC62BA80094EDFE /* BandyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BandyUITests.swift; sourceTree = "<group>"; };
 		F9C961841EC62BA80094EDFE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F9E61BFA1FCC275200715124 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		F9E61BFE1FCC39F200715124 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		F9E61C011FCC3D8D00715124 /* ProfilViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilViewController.swift; sourceTree = "<group>"; };
 		F9E61C031FCC3FBB00715124 /* ProfilEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilEditViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +130,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0EB78EFD21BEF77D005DC88C /* graphql */ = {
+			isa = PBXGroup;
+			children = (
+				0EBEEC3421BDCA2D00A14BC2 /* API.swift */,
+				0E659E3C21C05D2600F7BCB2 /* LoginViewController.graphql */,
+				0EBEFC2D21BDB3B80099E419 /* MusicianRegisterViewController.graphql */,
+				0E659E3021C02BCC00F7BCB2 /* LabelRegisterViewController.graphql */,
+				0E659E2E21C02BA600F7BCB2 /* ProfilViewController.graphql */,
+				0E659E3221C02C8500F7BCB2 /* LabelProfilViewController.graphql */,
+				0E659E3421C02CA000F7BCB2 /* EditLabelProfilViewController.graphql */,
+				0E659E3821C030F900F7BCB2 /* ResearchLabelViewController.graphql */,
+			);
+			path = graphql;
+			sourceTree = "<group>";
+		};
 		2224B9E595A6A348A492DBBF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +168,7 @@
 			children = (
 				F929B74B208F8763001B58D6 /* LabelProfilViewController.swift */,
 				F929B74D208F8782001B58D6 /* EditLabelProfilViewController.swift */,
+				0E659E3621C030E500F7BCB2 /* ResearchLabelViewController.swift */,
 			);
 			name = Label;
 			sourceTree = "<group>";
@@ -142,8 +176,8 @@
 		F9677F3A1FCC143A0022825E /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				0EDC904521C1791F00700C46 /* RedirectViewController.swift */,
 				F9E61BFA1FCC275200715124 /* LoginViewController.swift */,
-				F9E61BFE1FCC39F200715124 /* RegisterViewController.swift */,
 				0EDCCA5921BD7A5F00C9BC02 /* MusicianRegisterViewController.swift */,
 				0EDCCA5B21BD7A8500C9BC02 /* LabelRegisterViewController.swift */,
 			);
@@ -162,7 +196,6 @@
 		F9C961531EC62BA80094EDFE = {
 			isa = PBXGroup;
 			children = (
-				F9C43C3620BEB16800CD44AC /* bandy.graphql */,
 				F9C9615E1EC62BA80094EDFE /* Bandy */,
 				F9C961761EC62BA80094EDFE /* BandyTests */,
 				F9C961811EC62BA80094EDFE /* BandyUITests */,
@@ -185,6 +218,7 @@
 		F9C9615E1EC62BA80094EDFE /* Bandy */ = {
 			isa = PBXGroup;
 			children = (
+				0EB78EFD21BEF77D005DC88C /* graphql */,
 				F961E6C8208F70C00063B391 /* Label */,
 				F987911B20491D62001FCFEC /* Musicien */,
 				F9677F3A1FCC143A0022825E /* Login */,
@@ -193,6 +227,7 @@
 				F9C961631EC62BA80094EDFE /* Main.storyboard */,
 				F9C961691EC62BA80094EDFE /* Assets.xcassets */,
 				F9C9616B1EC62BA80094EDFE /* LaunchScreen.storyboard */,
+				0EC7F45D21BDB93C00DAF216 /* schema.json */,
 				F9C9616E1EC62BA80094EDFE /* Info.plist */,
 			);
 			path = Bandy;
@@ -224,7 +259,7 @@
 			buildConfigurationList = F9C961871EC62BA80094EDFE /* Build configuration list for PBXNativeTarget "Bandy" */;
 			buildPhases = (
 				D7F7A7150E20F2A65C1FE954 /* [CP] Check Pods Manifest.lock */,
-				F95B06F220BE89BA0095A1D9 /* Generate  Apollo GraphQL API */,
+				0EC7F45F21BDBCD000DAF216 /* Generate Apollo GraphQL API */,
 				F9C961581EC62BA80094EDFE /* Sources */,
 				F9C961591EC62BA80094EDFE /* Frameworks */,
 				F9C9615A1EC62BA80094EDFE /* Resources */,
@@ -333,10 +368,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9C43C3720BEB16800CD44AC /* bandy.graphql in Resources */,
+				0E659E3921C030F900F7BCB2 /* ResearchLabelViewController.graphql in Resources */,
+				0EBEFC2E21BDB3B80099E419 /* MusicianRegisterViewController.graphql in Resources */,
+				0E659E3D21C05D2600F7BCB2 /* LoginViewController.graphql in Resources */,
 				F9C9616D1EC62BA80094EDFE /* LaunchScreen.storyboard in Resources */,
 				F9C9616A1EC62BA80094EDFE /* Assets.xcassets in Resources */,
+				0E659E3321C02C8500F7BCB2 /* LabelProfilViewController.graphql in Resources */,
+				0E659E3121C02BCC00F7BCB2 /* LabelRegisterViewController.graphql in Resources */,
+				0EC7F45E21BDB93D00DAF216 /* schema.json in Resources */,
+				0E659E2F21C02BA600F7BCB2 /* ProfilViewController.graphql in Resources */,
 				F9C961651EC62BA80094EDFE /* Main.storyboard in Resources */,
+				0E659E3521C02CA000F7BCB2 /* EditLabelProfilViewController.graphql in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +399,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		0EC7F45F21BDBCD000DAF216 /* Generate Apollo GraphQL API */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 12;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Generate Apollo GraphQL API";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "APOLLO_FRAMEWORK_PATH=\"$(eval find $FRAMEWORK_SEARCH_PATHS -name \"Apollo.framework\" -maxdepth 1)\"\n\nif [ -z \"$APOLLO_FRAMEWORK_PATH\" ]; then\necho \"error: Couldn't find Apollo.framework in FRAMEWORK_SEARCH_PATHS; make sure to add the framework to your project.\"\nexit 1\nfi\n\ncd \"${SRCROOT}\"\n$APOLLO_FRAMEWORK_PATH/check-and-run-apollo-cli.sh codegen:generate --queries=\"$(find . -name '*.graphql')\" --schema=schema.json API.swift\n";
+		};
 		43487BD0BFDA9AB5383733F8 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -395,20 +455,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F95B06F220BE89BA0095A1D9 /* Generate  Apollo GraphQL API */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Generate  Apollo GraphQL API";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "APOLLO_FRAMEWORK_PATH=\"$(eval find $FRAMEWORK_SEARCH_PATHS -name \"Apollo.framework\" -maxdepth 1)\"\n\nif [ -z \"$APOLLO_FRAMEWORK_PATH\" ]; then\necho \"error: Couldn't find Apollo.framework in FRAMEWORK_SEARCH_PATHS; make sure to add the framework to your project.\"\nexit 1\nfi\n\ncd \"${SRCROOT}/${TARGET_NAME}\"\n$APOLLO_FRAMEWORK_PATH/check-and-run-apollo-cli.sh codegen:generate --queries=\"$(find . -name '*.graphql')\" --schema=schema.json API.swift\n";
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -416,13 +462,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EBEEC3521BDCA2E00A14BC2 /* API.swift in Sources */,
 				F9E61C021FCC3D8D00715124 /* ProfilViewController.swift in Sources */,
 				F9E61C041FCC3FBB00715124 /* ProfilEditViewController.swift in Sources */,
 				0EDCCA5C21BD7A8500C9BC02 /* LabelRegisterViewController.swift in Sources */,
+				0EDC904621C1791F00700C46 /* RedirectViewController.swift in Sources */,
+				0E659E3721C030E500F7BCB2 /* ResearchLabelViewController.swift in Sources */,
 				0EDCCA5A21BD7A5F00C9BC02 /* MusicianRegisterViewController.swift in Sources */,
 				F929B74E208F8782001B58D6 /* EditLabelProfilViewController.swift in Sources */,
 				F9E61BFB1FCC275200715124 /* LoginViewController.swift in Sources */,
-				F9E61BFF1FCC39F200715124 /* RegisterViewController.swift in Sources */,
 				F9C961621EC62BA80094EDFE /* ViewController.swift in Sources */,
 				F929B74C208F8763001B58D6 /* LabelProfilViewController.swift in Sources */,
 				F9C961601EC62BA80094EDFE /* AppDelegate.swift in Sources */,

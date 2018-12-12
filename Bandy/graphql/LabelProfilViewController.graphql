@@ -1,0 +1,16 @@
+Query LabelProfil($user_id: user_id) {
+    users(id: $user_id) {
+        email
+        name
+        twitter_id
+        facebook_id
+        city
+        country
+    }
+}
+
+Query LabelProfilGenre($user_id: user_id) {
+    labels(user_id: $user_id) {
+        favorite_genre
+    }
+}

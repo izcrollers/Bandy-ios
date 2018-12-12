@@ -1,0 +1,9 @@
+Mutation NewMusician($email: String!, $password: String!, $name: String!, $genre: String!, $band: Boolean!, $country: String!,$city: String!) {
+    newMusician(email: $email, password: $password, name: $name, genre: $genre, band: $band, country: $country, city: $city) {
+            id
+            email
+            name
+            country
+            city
+    }
+}
