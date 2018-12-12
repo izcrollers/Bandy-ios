@@ -8,18 +8,39 @@
 
 import UIKit
 
-class LabelRegisterViewController: UIViewController {
+class LabelRegisterViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var labelNameTextField: UITextField!
     @IBOutlet weak var genrePicker: UIPickerView!
     
+    var genrePickerData: [String] = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.hideKeyboardWhenTappedAround()
         // Do any additional setup after loading the view.
+        // Connect data:
+        genrePicker.delegate = self
+        genrePicker.dataSource = self
+        
+        genrePickerData = ["Alternative", "Blues", "Classical", "Country", "Dance", "Easy Listening", "Electronic", "Folk", "Jazz", "Latin", "Opera", "Pop", "Soul", "Reggae", "Rock"]
 
+    }
+    
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return genrePickerData.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return genrePickerData[row]
     }
     
 //    @IBAction func registerButton(_ sender: UIButton) {

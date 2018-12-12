@@ -19,7 +19,7 @@ class LoginViewController: UIViewController {
     
     @IBOutlet weak var textFieldLogin: UITextField!
     @IBOutlet weak var textFieldPassword: UITextField!
-    @IBOutlet weak var labelMessage: UILabel!
+    @IBOutlet weak var displayTextField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +35,7 @@ class LoginViewController: UIViewController {
     
     @IBAction func buttonLogin(_ loginButton: UIButton) {
 
-        self.labelMessage.text = ""
+        displayTextField.text = ""
         //creating parameters for the post request
         let parameters: Parameters=[
             "email":textFieldLogin.text!,
@@ -47,7 +47,6 @@ class LoginViewController: UIViewController {
         {
                 response in
                 //printing response
-            
                 print(response)
                 //getting the json value from the server
                 if let result = response.result.value {
@@ -55,12 +54,13 @@ class LoginViewController: UIViewController {
                     tokenarray = result.components(separatedBy: "\"")
                     print(token)
                     if (token == "message") {
-                        self.labelMessage.text = "Mauvais identifiant"
+                        self.displayTextField.text = "Mauvais identifiant"
+                        tokenarray.removeAll()
                     }
                     else {
-                        self.labelMessage.text = "connexion..."
-                        let redirect = UIStoryboard(name: "main", bundle: nil).instantiateViewController(withIdentifier: "Redirect") as! RedirectViewController
-                        present(redirect, animated: true, completion: nil)
+                        self.displayTextField.text = "connexion..."
+                        let redirect = self.storyboard?.instantiateViewController(withIdentifier: "Redirect") as! RedirectViewController
+                        self.present(redirect, animated: true, completion: nil)
                     }
             }
         }

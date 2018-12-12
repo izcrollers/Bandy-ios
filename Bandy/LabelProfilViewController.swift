@@ -24,7 +24,7 @@ class LabelProfilViewController: UIViewController {
         
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        
+        self.hideKeyboardWhenTappedAround()
 //        apollo.fetch(query: <#T##GraphQLQuery#>)
     }
     
