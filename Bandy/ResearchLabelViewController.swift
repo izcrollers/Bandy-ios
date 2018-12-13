@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ResearchLabelViewController: UIViewController {
+class ResearchLabelViewController: UIViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()

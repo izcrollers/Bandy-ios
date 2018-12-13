@@ -8,36 +8,43 @@
 
 
 import UIKit
+import Foundation
 
-class ProfilEditViewController: UIViewController {
+class ProfilEditViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     
-    @IBOutlet weak var BannerImage: UIImageView!
-    @IBOutlet weak var ProfilImage: UIImageView!
-    @IBOutlet weak var BandName: UITextField!
-    @IBOutlet weak var LittleBandBio: UITextField!
-    @IBOutlet weak var BandBio: UITextField!
+    @IBOutlet weak var picker: UIPickerView!
     
-    /*
-     This value is either passed by `MealTableViewController` in `prepare(for:sender:)`
-     or constructed as part of adding a new meal.
-     */
+    var genrePickerData: [String] = [String]()
     
-/*    override func viewDidLoad() {
+   override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Handle the text field’s user input through delegate callbacks.
-        nameTextField.delegate = self
     
-        if let meal = meal {
-            navigationItem.title = meal.name
-            BandName.text = meal.name
-            ProfilImage.image = meal.photo
-            ratingControl.rating = meal.rating
-        }
-        
-        updateSaveButtonState()
+        self.hideKeyboardWhenTappedAround()
+        // Connect data:
+        picker.delegate = self
+        picker.dataSource = self
+    
+        genrePickerData = ["Alternative", "Blues", "Classical", "Country", "Dance", "Easy Listening", "Electronic", "Folk", "Jazz", "Latin", "Opera", "Pop", "Soul", "Reggae", "Rock"]
     }
     
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return genrePickerData.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return genrePickerData[row]
+    }
+
+/*
     //MARK: UITextFieldDelegate
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
